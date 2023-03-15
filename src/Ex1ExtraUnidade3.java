@@ -13,7 +13,7 @@ public class ExExtraUnidade3 {
         System.out.println("Digite a terceira nota: ");
         Float nota3 = input.nextFloat();
 
-        Double media = (nota1 * 0.5 + nota2 * 0.3 + nota3 * 0.2) / 10;
+        Double media = (nota1 * 0.5 + nota2 * 0.3 + nota3 * 0.2);
         
         System.out.println("A media pondera é: " + media);
 
