@@ -7,7 +7,7 @@ o número de peças 2 e o valor unitário de cada peça 2. Após, calcule e most
 
 import java.util.Scanner;
 
-public class Ex8{
+public class Ex08{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
