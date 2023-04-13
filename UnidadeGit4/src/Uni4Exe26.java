@@ -5,42 +5,44 @@ public class Uni4Exe26 {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Digite a opção: ");
-        System.out.println("1 - Soma de dois números.");
-        System.out.println("2 - Diferença entre dois números.");
-        System.out.println("3 - Produto entre dois números.");
-        System.out.println("4 - Divisão entre dois números (o denominador não pode ser zero).");
-        int opcao = input.nextInt();
+        System.out.println("T : Calcular a área de um triângulo de base b e altura h");
+        System.out.println("Q : Calcular a área de um quadrado de lado l");
+        System.out.println("R : Calcular a área de um retângulo de base b e altura h");
+        System.out.println("C : Calcular a área de um círculo de raio r");
+        String opcao = input.next().toUpperCase(); // Coloca a primeira letra em maiúscula 
 
         switch (opcao){
-            case 1:
-                double soma = numero1 + numero2;
-                System.out.println("A soma deles é " + soma);
+            case "T":
+                System.out.println("Digite a base e a altura do triangulo: ");
+                double base = input.nextDouble();
+                double altura = input.nextDouble();
+                System.out.println("Área do triangulo = " + base * altura / 2);    
             break; 
 
-            case 2:
-                double diferenca = numero1 + numero2;
-                System.out.println("A diferença deles é " + diferenca);
+            case "Q":
+                System.out.println("Digite o lado: ");
+                double lado = input.nextDouble();
+                System.out.println("Area do quadrado =  " + lado * lado);
             break;
 
-            case 3:
-                double multicacao = numero1 * numero2;
-                System.out.println("A multicacao deles é " + multicacao);
+            case "R":
+                System.out.println("Digite a base e a altura do retangulo: ");
+                double baseR = input.nextDouble();
+                double alturaR = input.nextDouble();
+                System.out.println("Area do retangulo = " + baseR * alturaR);
             break;
 
-            case 4:
-                if (numero2 != 0){
-                    double divisao = numero1 / numero2;
-                    System.out.println("A divisao deles é " + divisao);
-                }  else {
-                    System.out.println("Opção invalida para divisão");
-                }
+            case "C":
+                System.out.println("Digite o raio: ");
+                double raio = input.nextDouble();
+                System.out.println("Area do circulo = " + Math.PI * Math.pow(2, raio));
             break;
 
             default:
                 System.out.println("Opção invalida");
                
-            
-            
+            input.close();
+
         }
 
         
